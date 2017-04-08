@@ -1,1 +1,271 @@
-My Test Page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/flickity.css" media="screen">
+	<title>New and Improved TTC</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo">
+				<a href="#top"><img src="images/ttc-logo.png"></a>
+			</div>
+			<ul class="wrapper">
+				<li><a href="#schedules">Schedules & Maps</a></li>
+				<li><a href="#alerts">Alerts</a></li>
+				<li><a href="#fares">Fares & Passes</a></li>
+				<li><a href="#riding">Riding the TTC</a></li>
+			</ul>
+		</nav>
+		<div class="newsCarousel" id="top">
+			<div class="newsItem">
+				<h2>April Service Changes</h2>
+				<p>Service changes Starting April 1, several service improvements and changes will take effect.</p>
+			</div>
+			<div class="newsItem">
+				<h2>Riding the 501</h2>
+				<p>Did you know? With nearly 25 kilometres of track, the 501 Queen is the longest streetcar route operating in North America.</p>
+			</div>
+			<div class="newsItem">
+				<h2>PRESTO Rollout in 2017</h2>
+				<p>You will still be able to buy and use Metropasses, tickets and tokens in 2017.</p>
+			</div>
+		</div>
+	</header>
+	<section class="planner">
+		<div class="flex-container wrapper">
+			<h2>Plan Your Trip</h2>
+			<form>
+				<div class="field">
+					<span>From:</span>
+					<input type="text" name="address-from" placeholder="From Address">
+				</div>
+				<div class="field">
+					<span>To:</span>
+					<input type="text" name="address-to" placeholder="To Address">
+				</div>
+				<div class="send">
+					<a href="http://maps.google.com" class="button">➜</a>
+				</div>
+			</form>
+		</div>
+	</section>
+	<section class="schedules" id="schedules">
+		<div class="flex-container wrapper">
+			<div class="threequarters">
+				<h1>Schedules & Maps</h1>
+				<div class="flex-container">
+				
+					<div>
+						<a href="">
+						<img src="images/schedule-subway.svg">
+						<h2>Subway</h2>
+						</a>
+					</div>
+					<div>
+						<a href=""><img src="images/schedule-streetcar.svg">
+						<h2>Streetcar</h2>
+						</a>
+					</div>
+					<div>
+						<a href=""><img src="images/schedule-bus.svg">
+						<h2>Bus</h2>
+						</a>
+					</div>
+					<div>
+						<a href=""><img src="images/schedule-map.svg">
+						<h2>Maps</h2>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="alerts quarter" id="alerts">
+				<h2>TTC Alerts</h2>
+				<ol>
+					<li class="item1">
+						There will be no subway service between Downsview and St George stations on April 8 and 9.
+					</li>
+					<li class="item2">
+						 26 Dupont route diverting both ways via St George, Bernard, Huron
+					</li>
+					<li class="item3">
+						Elevator Alert: St Andrew Station, subway platform to concourse, out of service.
+					</li>
+				</ol>
+				<p><a href="">See all alerts</a></p>
+
+			</div>
+		</div>
+	</section>
+	<section class="fares" id="fares">
+		<div class="wrapper flex-container">
+				<h2><a href="">Fares & Passes</a></h2>
+				<ul>
+					<li>
+						<span>	
+							Adult cash
+						</span>
+						<span>
+							$3.25
+						</span>
+					</li>
+					<li>
+						<span>	
+							Child
+						</span>
+						<span>
+							Free
+						</span>
+					</li>
+					<li>
+						<span>	
+							Seniors cash
+						</span>
+						<span>
+							$2.10
+						</span>
+					</li>
+					<li>
+						<span>	
+							Tickets & Tokens
+						</span>
+						<span>
+							$3.00
+						</span>
+					</li>
+					<li>
+						<span>	
+							Day Pass
+						</span>
+						<span>
+							$12.50
+						</span>
+					</li>
+				</ul>
+				
+		</div>
+	</section>
+	<section class="riding" id="riding">
+		<div class="wrapper clearfix">
+			<h1>Riding the TTC</h1>
+				<div class="block-container clearfix">
+					<figure class="block third">
+						<img src="images/riding-know.jpg" alt="">
+						<div class="overlay">
+						</div>
+						<figcaption><a href="">Know your TTC</a></figcaption>
+					</figure>
+					<figure class="block third">
+						<img src="images/riding-bike.jpg" alt="">
+
+						<div class="overlay ">
+							
+						</div>
+						<figcaption><a href="">Bike & Ride</a></figcaption>
+					</figure>
+					<div class="block third">
+						<img src="images/riding-inform.jpg" alt="">
+
+						<div class="overlay">
+							
+						</div>
+						<figcaption><a href="">Stay Informed</a></figcaption>
+					</div>
+					<div class="block third">
+						<img src="images/riding-safety.jpg" alt="">
+						<div class="overlay">
+							
+						</div>
+						<figcaption><a href="">Safety and security</a></figcaption>
+					</div>
+
+					<div class="block third">
+						<img src="images/riding-airport.jpg" alt="">
+						<div class="overlay">
+							
+						</div>
+						<figcaption><a href="">Service to the Airport</a></figcaption>
+					</div>
+					<div class="block third">
+						<img src="images/riding-parking.jpg" alt="">
+						<div class="overlay">	
+						</div>
+						<figcaption><a href="">Parking</a></figcaption>
+					</div>			
+		</div>
+	</section>
+	<footer>
+		<div class="wrapper clearfix">
+			<div class="block-container clearfix">
+				<div class="block quarter">
+					<h3>About the TTC</h3>
+					<p>The Toronto Transit Commission is a public transport agency that operates bus, rapid transit, streetcar, and paratransit services in Toronto, Ontario, Canada.</p>
+				</div>
+				<div class="block quarter indent">
+					<h3>Contact Information</h3>
+					<p><i class="fa fa-map-marker" aria-hidden="true"></i>1900 Yonge Street, Toronto  ON</p>
+					<p><i class="fa fa-envelope-o" aria-hidden="true"></i>info@ttc.com</p>
+					<p><i class="fa fa-phone" aria-hidden="true"></i>416-845-2457</p>
+					<p><i class="fa fa-link" aria-hidden="true"></i>www.TTC.ca</p>
+				</div>
+				<div class="block quarter">
+					<h3>Mailing List</h3>
+					<p>Please enter your email address to subscribe to our newsletter.</p>
+					<form>
+						<input type="text" name="email" placeholder="Email Address">
+						<div class="send">
+							<i class="fa fa-paper-plane" aria-hidden="true"></i>
+						</div>
+					</form>
+				</div>
+				<div class="block quarter">
+					<h3>Social Media</h3>
+					<ul>
+						<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</li>
+						<li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						</li>
+						<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</li>
+						<li><a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+			</div>
+		</div>
+	</footer>
+
+
+<!-- Javascript and jquery -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="styles/smooth-scroll.js"></script>
+<script>
+	$(document).ready(function(){
+		console.log('the document is ready :)') 
+		$('.newsCarousel').flickity({
+			contain: true,
+			wrapAround: true,
+			draggable: false,
+			autoPlay: 4500
+		}) //grabbing gallery from doc
+	});
+	$('a').smoothScroll({
+		offset:-214, //brings the scroll stop closer to id
+		speed:500,
+		easing: 'linear'
+	});
+
+</script>
+
+
+<!-- load font awesome -->
+
+<script src='https://use.fontawesome.com/413bd6a191.js'></script>
+	
+</body>
+</html>
