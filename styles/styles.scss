@@ -6,7 +6,7 @@ body {
 	background: white;
 	padding:0;
 }
-h1,h2,h3,p {
+h1,h2,h3,p, a {
 	font-family: 'Montserrat', sans-serif;
 	color: #414042;
 }
@@ -646,6 +646,14 @@ footer {
 			}
 		}
 		header {
+			padding-top:226px;
+			nav {
+				position:absolute;
+				top:0;
+				left:0;
+			}
+		}
+		header {
 			.newsCarousel {
 				width: 100%;
 			}
@@ -697,14 +705,7 @@ footer {
 	.third {
 		width:100%;
 	}
-	header {
-		padding-top:222px;
-		nav {
-			position:absolute;
-			top:0;
-			left:0;
-		}
-	}
+	
 
 	.schedules h2 {
 		font-size: 13px;
