@@ -700,6 +700,10 @@ footer {
     width: 100%; }
   header {
     padding-top: 222px; }
+    header nav {
+      position: absolute;
+      top: 0;
+      left: 0; }
   .schedules h2 {
     font-size: 13px; }
   .riding .block img {
