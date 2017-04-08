@@ -254,8 +254,15 @@
 			autoPlay: 4500
 		}) //grabbing gallery from doc
 	});
+	if ($(window).width() > 660) {
+		var navOffset = $('nav').height();
+	} else {
+		var navOffset = -20;
+	}
+	console.log(navOffset)
 	$('a').smoothScroll({
-		offset:-147, //brings the scroll stop closer to id
+		// offset:-147, //brings the scroll stop closer to id
+		offset: -(navOffset + 20), //brings the scroll stop closer to id
 		speed:500,
 		easing: 'linear'
 	});
