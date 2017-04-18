@@ -12,14 +12,40 @@
 	<header>
 		<nav>
 			<div class="logo">
-				<a href="#top"><img src="images/ttc-logo.png"></a>
+				<img src="images/ttc-logo.png">
 			</div>
-			<ul class="wrapper">
-				<li><a href="#schedules">Schedules & Maps</a></li>
-				<li><a href="#alerts">Alerts</a></li>
-				<li><a href="#fares">Fares & Passes</a></li>
-				<li><a href="#riding">Riding the TTC</a></li>
-			</ul>
+			<p class="hamburger">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</p>
+			<div class="wrapper">
+				<ul>
+					<li><a href="#schedules">Schedules & Maps</a></li>
+					<li><a href="#alerts">Alerts</a></li>
+					<li><a href="#fares">Fares & Passes</a></li>
+					<li><a href="#riding">Riding the TTC</a></li>
+				</ul>
+				<div class="overlayContent">
+					<p>1900 Yonge Street, Toronto  ON</p>
+					<p>info@ttc.com</p>
+					<p>416-845-2457</p>
+					<ul>
+						<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</li>
+						<li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						</li>
+						<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</li>
+						<li><a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+					<form>
+						<input type="text" name="search" placeholder="Search">
+						<div class="searchButton">
+							<a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+						</div>
+					</form>
+				</div>
+			</div>
 		</nav>
 		<div class="newsCarousel" id="top">
 			<div class="newsItem">
@@ -31,7 +57,7 @@
 				<p>Did you know? With nearly 25 kilometres of track, the 501 Queen is the longest streetcar route operating in North America.</p>
 			</div>
 			<div class="newsItem">
-				<h2>PRESTO Rollout in 2017</h2>
+				<h2>PRESTO Rollout</h2>
 				<p>You will still be able to buy and use Metropasses, tickets and tokens in 2017.</p>
 			</div>
 		</div>
@@ -59,26 +85,28 @@
 			<div class="threequarters">
 				<h1>Schedules & Maps</h1>
 				<div class="flex-container">
-				
 					<div>
 						<a href="">
 						<img src="images/schedule-subway.svg">
-						<h2>Subway</h2>
+						<h3>Subway</h3>
 						</a>
 					</div>
 					<div>
-						<a href=""><img src="images/schedule-streetcar.svg">
-						<h2>Streetcar</h2>
+						<a href="">
+						<img src="images/schedule-streetcar.svg">
+						<h3>Streetcar</h3>
 						</a>
 					</div>
 					<div>
-						<a href=""><img src="images/schedule-bus.svg">
-						<h2>Bus</h2>
+						<a href="">
+						<img src="images/schedule-bus.svg">
+						<h3>Bus</h3>
 						</a>
 					</div>
 					<div>
-						<a href=""><img src="images/schedule-map.svg">
-						<h2>Maps</h2>
+						<a href="">
+						<img src="images/schedule-map.svg">
+						<h3>Maps</h3>
 						</a>
 					</div>
 				</div>
@@ -87,7 +115,7 @@
 				<h2>TTC Alerts</h2>
 				<ol>
 					<li class="item1">
-						There will be no subway service between Downsview and St George stations on April 8 and 9.
+						No subway service between Downsview and St George stations on April 8 and 9.
 					</li>
 					<li class="item2">
 						 26 Dupont route diverting both ways via St George, Bernard, Huron
@@ -96,147 +124,169 @@
 						Elevator Alert: St Andrew Station, subway platform to concourse, out of service.
 					</li>
 				</ol>
-				<p><a href="">See all alerts</a></p>
-
+				<p><a href="" class="more">See All</a></p>
 			</div>
 		</div>
 	</section>
 	<section class="fares" id="fares">
 		<div class="wrapper flex-container">
-				<h2><a href="">Fares & Passes</a></h2>
-				<ul>
-					<li>
-						<span>	
-							Adult cash
-						</span>
-						<span>
-							$3.25
-						</span>
-					</li>
-					<li>
-						<span>	
-							Child
-						</span>
-						<span>
-							Free
-						</span>
-					</li>
-					<li>
-						<span>	
-							Seniors cash
-						</span>
-						<span>
-							$2.10
-						</span>
-					</li>
-					<li>
-						<span>	
-							Tickets & Tokens
-						</span>
-						<span>
-							$3.00
-						</span>
-					</li>
-					<li>
-						<span>	
-							Day Pass
-						</span>
-						<span>
-							$12.50
-						</span>
-					</li>
-				</ul>
-				
+			<h2>Fares & Passes</h2>
+			<ul>
+				<li>
+					<span>Adult cash</span>
+					<span>$3.25</span>
+				</li>
+				<li>
+					<span>Child</span>
+					<span>Free</span>
+				</li>
+				<li>
+					<span>Seniors cash</span>
+					<span>$2.10</span>
+				</li>
+				<li>
+					<span>Tickets & Tokens</span>
+					<span>$3.00</span>
+				</li>
+				<li>
+					<span>Day Pass</span>
+					<span>$12.50</span>
+				</li>
+			</ul>
+		</div>
+		<div class="wrapper">
+			<input id="toggle" type="checkbox">
+			<label for="toggle"></label>
+
+			<div class="expand">
+				<div style="overflow-x:auto;"> 
+				z<!-- content scrolls when screen is too small to fit everything -->
+					<table>
+						<tr>
+							<th></th>
+							<th>Adult</th>
+							<th>Senior</th>
+						</tr>
+						<tr>
+							<td>Tickets / Tokens</td>
+							<td>$3.25</td>
+							<td>2.10</td>
+						</tr>
+						<tr>
+							<td>Presto</td>
+							<td>$3.00</td>
+							<td>$2.05</td>
+						</tr>
+						<tr>
+							<td>Downtown Express</td>
+							<td>$3.00 / Token / Sticker ($43)</td>
+							<td>$2.05 / Ticket / Sticker($43)</td>
+						</tr>
+						<tr>
+							<td>Child</td>
+							<td>Free</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Day Pass</td>
+							<td>$12.5</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Weekly Pass</td>
+							<td>$43.75</td>
+							<td>$34.75</td>
+						</tr>
+						<tr>
+							<td>GTA Weekly Pass</td>
+							<td>$63.00</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monthly Metropass</td>
+							<td>$146.25</td>
+							<td>$116.75</td>
+						</tr>
+						<tr>
+							<td>Metropass Discount Plan</td>
+							<td>$134.00</td>
+							<td>$107.00</td>
+						</tr>
+						<tr>
+							<td>Post-Secondary Metropass</td>
+							<td>$116.75</td>
+							<td></td>
+						</tr>
+					</table>
+					
+				</div>
+			</div>
 		</div>
 	</section>
 	<section class="riding" id="riding">
 		<div class="wrapper clearfix">
 			<h1>Riding the TTC</h1>
-				<div class="block-container clearfix">
-					<figure class="block third">
-						<img src="images/riding-know.jpg" alt="">
-						<div class="overlay">
-						</div>
-						<figcaption><a href="">Know your TTC</a></figcaption>
-					</figure>
-					<figure class="block third">
-						<img src="images/riding-bike.jpg" alt="">
+			<div class="ridingCarousel block-container clearfix">
+				<figure class="block quarter">
+					<img src="images/riding-know.jpg" alt="">
+					<div class="buttonOverlay"></div>
+					<figcaption><a href="">Know your TTC</a></figcaption>
+				</figure>
+				<figure class="block quarter">
+					<img src="images/riding-bike.jpg" alt="">
+					<div class="buttonOverlay "></div>
+					<figcaption><a href="">Bike & Ride</a></figcaption>
+				</figure>
+				
+				<figure class="block quarter">
+					<img src="images/riding-safety.jpg" alt="">
+					<div class="buttonOverlay "></div>
+					<figcaption><a href="">Safety and security</a></figcaption>
+				</figure>
 
-						<div class="overlay ">
-							
-						</div>
-						<figcaption><a href="">Bike & Ride</a></figcaption>
-					</figure>
-					<div class="block third">
-						<img src="images/riding-inform.jpg" alt="">
-
-						<div class="overlay">
-							
-						</div>
-						<figcaption><a href="">Stay Informed</a></figcaption>
-					</div>
-					<div class="block third">
-						<img src="images/riding-safety.jpg" alt="">
-						<div class="overlay">
-							
-						</div>
-						<figcaption><a href="">Safety and security</a></figcaption>
-					</div>
-
-					<div class="block third">
-						<img src="images/riding-airport.jpg" alt="">
-						<div class="overlay">
-							
-						</div>
-						<figcaption><a href="">Service to the Airport</a></figcaption>
-					</div>
-					<div class="block third">
-						<img src="images/riding-parking.jpg" alt="">
-						<div class="overlay">	
-						</div>
-						<figcaption><a href="">Parking</a></figcaption>
-					</div>			
+				<figure class="block quarter">
+					<img src="images/riding-airport.jpg" alt="">
+					<div class="buttonOverlay "></div>
+					<figcaption><a href="">Service to the Airport</a></figcaption>
+				</figure>
+				<figure class="block quarter">
+					<img src="images/riding-parking.jpg" alt="">
+					<div class="buttonOverlay "></div>
+					<figcaption><a href="">Parking</a></figcaption>
+				</figure>	
+				<figure class="block quarter">
+					<img src="images/riding-airport.jpg" alt="">
+					<div class="buttonOverlay "></div>
+					<figcaption><a href="">Wheel-Trans</a></figcaption>
+				</figure>
+				<figure class="block quarter">
+					<img src="images/riding-parking.jpg" alt="">
+					<div class="buttonOverlay "></div>
+					<figcaption><a href="">Construction Updates</a></figcaption>
+				</figure>	
+				<figure class="block quarter">
+					<img src="images/riding-inform.jpg" alt="">
+					<div class="buttonOverlay "></div>
+					<figcaption><a href="">Stay Informed</a></figcaption>
+				</figure>	
+			</div>
 		</div>
 	</section>
 	<footer>
 		<div class="wrapper clearfix">
-			<div class="block-container clearfix">
-				<div class="block quarter">
-					<h3>About the TTC</h3>
-					<p>The Toronto Transit Commission is a public transport agency that operates bus, rapid transit, streetcar, and paratransit services in Toronto, Ontario, Canada.</p>
-				</div>
-				<div class="block quarter indent">
-					<h3>Contact Information</h3>
-					<p><i class="fa fa-map-marker" aria-hidden="true"></i>1900 Yonge Street, Toronto  ON</p>
-					<p><i class="fa fa-envelope-o" aria-hidden="true"></i>info@ttc.com</p>
-					<p><i class="fa fa-phone" aria-hidden="true"></i>416-845-2457</p>
-					<p><i class="fa fa-link" aria-hidden="true"></i>www.TTC.ca</p>
-				</div>
-				<div class="block quarter">
-					<h3>Mailing List</h3>
-					<p>Please enter your email address to subscribe to our newsletter.</p>
-					<form>
-						<input type="text" name="email" placeholder="Email Address">
-						<div class="send">
-							<i class="fa fa-paper-plane" aria-hidden="true"></i>
-						</div>
-					</form>
-				</div>
-				<div class="block quarter">
-					<h3>Social Media</h3>
-					<ul>
-						<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						</li>
-						<li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-						</li>
-						<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-						</li>
-						<li><a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
-						</li>
-					</ul>
+			<p>The Toronto Transit Commission is a public transport agency that operates bus, rapid transit, streetcar, and paratransit services in Toronto, Ontario, Canada.</p>
+			<div class="contact">
+				info@ttc.com <span>|</span> 416-845-2457
+				<ul>
+					<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+				</ul>
 			</div>
 		</div>
 	</footer>
+
 
 
 <!-- Javascript and jquery -->
@@ -247,31 +297,49 @@
 <script>
 	$(document).ready(function(){
 		console.log('the document is ready :)') 
+		//Flickity for the news carousel
 		$('.newsCarousel').flickity({
 			contain: true,
 			wrapAround: true,
 			draggable: true,
 			autoPlay: 4500
-		}) //grabbing gallery from doc
+		}) 
+		//Flickity for the Riding section carousel
+		$('.ridingCarousel').flickity({
+			contain: true,
+			groupCells: true,
+			draggable: true,
+			watchCSS: true //to enable and disable flickity in the css stylesheet, depending on screen size
+		}) 
 	});
-	if ($(window).width() > 660) {
-		var navOffset = $('nav').height();
-	} else {
-		var navOffset = -20;
-	}
+	
+	//Smooth scroll
+	var navOffset = $('nav').height(); //gives the variable navOffset a value of the height of the nav element
 	console.log(navOffset)
 	$('a').smoothScroll({
-		// offset:-147, //brings the scroll stop closer to id
-		offset: -(navOffset + 20), //brings the scroll stop closer to id
+		offset: -(navOffset + 20), //20 is the bottom padding on the nav, which the height above doesn't include
 		speed:500,
 		easing: 'linear'
 	});
 
+	//Toggling the hamburger menu
+	$('.hamburger').on('click', function(){
+		// toggle class overlay on the menu
+		$('nav').toggleClass('navOverlay');
+		// toggle class show on the ul inside of the menu
+		$('nav .wrapper').toggleClass('show');
+	})
+	//when click on a nav item on overlay, hide the overlay
+	$('nav a').on('click', function(){
+		// toggle class overlay on the menu
+		$('nav').removeClass('navOverlay');
+		// toggle class show on the ul inside of the menu
+		$('nav .wrapper').removeClass('show');
+	})
 </script>
 
 
 <!-- load font awesome -->
-
 <script src='https://use.fontawesome.com/413bd6a191.js'></script>
 	
 </body>
