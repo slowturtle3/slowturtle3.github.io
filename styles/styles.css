@@ -301,7 +301,7 @@ header {
     border: none;
     width: 100%; }
     header .navOverlay ul li {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       text-align: left; }
     header .navOverlay ul a {
       font-size: 2rem;
@@ -321,7 +321,7 @@ header {
     display: none; }
   header .navOverlay .overlayContent {
     display: block;
-    margin-top: 60px;
+    margin-top: 30px;
     padding-top: 10px;
     border-top: 1px solid white; }
     header .navOverlay .overlayContent ul {
@@ -798,6 +798,8 @@ footer {
       display: none; }
     header nav .wrapper.show ul li a:hover:before {
       display: none; }
+  footer p {
+    font-size: 1.3rem; }
   footer .contact {
     display: none; }
   .planner .flex-container {
@@ -829,7 +831,7 @@ footer {
 
 /*********** screens smaller than 480px (mobile phones) ***********/
 @media (max-width: 480px) {
-  section {
+  section, footer {
     padding: 20px 0; }
   header .newsCarousel {
     padding: 50px 35px;

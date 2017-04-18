@@ -172,7 +172,7 @@ header {
 			border:none;
 			width: 100%;
 			li {
-				margin-bottom: 20px;
+				margin-bottom: 15px;
 				text-align: left;
 			}
 			a {
@@ -202,7 +202,7 @@ header {
 	}
 	.navOverlay .overlayContent {
 		display:block;
-		margin-top: 60px;
+		margin-top: 30px;
 		padding-top:10px;
 		border-top: 1px solid white;
 		ul {
@@ -745,6 +745,9 @@ footer {
 				}
 			}
 		}
+		footer p {
+			font-size: 1.3rem;
+		}
 		footer .contact {
 			display: none;
 		}
@@ -775,7 +778,7 @@ footer {
 /*********** screens smaller than 480px (mobile phones) ***********/
 
 @media (max-width: 480px) {
-	section {
+	section, footer {
 		padding:20px 0;
 	}
 	header {
